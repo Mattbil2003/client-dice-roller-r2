@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resizable Video Container</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="myVideo" autoplay loop>
+            <source src="dice_cinematic.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img class="title-png" src="diceroller.png">
+        <div id="dice-container">
+            <img id="dice1" class="imgdice1" alt="Dice 1">
+            <img id="dice2" class="imgdice2" alt="Dice 2">
+            <img id="dice3" class="imgdice3" alt="Dice 3">
+            <img id="dice4" class="imgdice3" alt="Dice 4">
+            <img id="dice5" class="imgdice5" alt="Dice 5">
+        </div>
+        
+    </div>
+    <div class = "button-container">
+        <h1>Number of Dice: </h1>
+        <button id="leftArrow" class = "arrow-btn"><img src="leftarrow.png"></button>
+        <span id="count" class = "count-display"></span>
+        <button id="rightArrow" class = "arrow-btn"><img class="invert" src="leftarrow.png"></button>
+
+        <button id="roll-button" class = "roll-button">Roll</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

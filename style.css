@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+video {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+}
+
+.title-png {
+    position: absolute;
+    top: 17%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 85%; 
+    height: auto;
+}
+.arrow-btn {
+    padding: 40px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border: none;
+    background-color: #ec1c24;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .arrow-btn img {
+    height: 20px; 
+    width: auto; 
+  }
+  .arrow-btn:hover {
+    background-color: #90171b;
+  }
+  
+  .count-display {
+    font-size: 50px;
+    padding: 50px 50px;
+    border-radius: 5px;
+    min-width: 50px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .invert{
+    transform: scaleX(-1);
+  }
+  .button-container{
+    display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px;
+
+  }
+
+  .roll-button {
+    padding: 20px 100px;
+    display: flex;
+    border: none;
+    background-color: #ec1c24;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 50px;
+    margin-left:10%;
+    font-family: sans;
+    font-weight: bold;
+  }
+  .roll-button:hover {
+    background-color: #90171b;
+  }
+  h1{
+    color: white;
+    font-family: sans;
+    font-size: 50px;
+  }
+
+  #dice-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+    min-width: 320px;
+}
+.imgdice1 {
+  display: none;
+  max-width: 150px; 
+  height: auto; 
+  margin: 5px; 
+}
+.imgdice2 {
+  display: none;
+  max-width: 150px; 
+  height: auto; 
+  margin: 5px; 
+}
+.imgdice3 {
+  display: none;
+  max-width: 150px; 
+  height: auto; 
+  margin: 5px; 
+}
+.imgdice4 {
+  display: none;
+  max-width: 150px; 
+  height: auto; 
+  margin: 5px; 
+}
+.imgdice5 {
+  display: none;
+  max-width: 150px; 
+  height: auto; 
+  margin: 5px; 
+}
