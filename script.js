@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
       return count
     }
   function rollDice(count) {
-    fetch(`server-dice-roller-r1-mb.azurewebsites.net/roll?count=${count}`)
+    fetch(`https://server-dice-roller-r1-mb.azurewebsites.net/roll?count=${count}`)
     .then(response => {
       if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('roll-button').addEventListener('click', () => rollDice(count));
 
     window.onload = function() {
-      rollDice();
+      rollDice(count);
     }
   });
   
