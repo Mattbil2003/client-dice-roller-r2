@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
       return count
     }
   function rollDice(count) {
-    fetch(`drserver.azurewebsites.net/roll?count=${count}`)
+    fetch(`https://drserver.azurewebsites.net/?count=${count}`)
     .then(response => {
       if (!response.ok) {
           throw new Error('Network response was not ok');
